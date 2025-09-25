@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Evolución de las Arquitecturas de Sistemas</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+  <!-- Estilos propios -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top px-3">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#inicio"><i class="bi bi-diagram-3-fill me-2"></i>Arquitecturas</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <header id="inicio" class="hero-section d-flex flex-column justify-content-center align-items-center text-center text-white">
+    <h1 class="display-4">Evolución de las Arquitecturas de Sistemas</h1>
+    <p class="lead">De los monolitos al edge computing: un viaje en la historia tecnológica</p>
+  </header>
+
+  <!-- Evolución -->
+  <section id="evolucion" class="container py-5">
+    <h2 class="text-center mb-4">Evolución de Arquitecturas</h2>
+    <div class="accordion" id="accordionExample">
+
+      <!-- Monolítico -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingOne">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+            <i class="bi bi-box me-2"></i> Monolítico
+          </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <img src="img/monolitico.png" class="img-fluid rounded mb-3" alt="Monolítico">
+            <p>Un solo bloque de software que contiene toda la lógica y la base de datos.</p>
+            <ul>
+              <li><strong>Ventajas:</strong> Simplicidad inicial, rápido de implementar.</li>
+              <li><strong>Desventajas:</strong> Difícil de escalar y mantener.</li>
+            </ul>
+            <p><em>Ejemplo:</em> Aplicaciones de escritorio clásicas.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Cliente-Servidor -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+            <i class="bi bi-laptop me-2"></i> Cliente-Servidor
+          </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <img src="Img/cliente.png" class="img-fluid rounded mb-3" alt="Cliente-Servidor">
+            <p>Separación entre cliente que consume y servidor que procesa.</p>
+            <ul>
+              <li><strong>Ventajas:</strong> Mejor distribución de funciones.</li>
+              <li><strong>Desventajas:</strong> Dependencia de la red.</li>
+            </ul>
+            <p><em>Ejemplo:</em> Aplicaciones web clásicas.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Archivos de Red -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingThree">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree">
+            <i class="bi bi-folder2-open me-2"></i> Archivos de Red
+          </button>
+        </h2>
+        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <img src="Img/redes.jpg" class="img-fluid rounded mb-3" alt="Archivos de Red">
+            <p>Sistemas que comparten archivos a través de la red local.</p>
+            <ul>
+              <li><strong>Ventajas:</strong> Centralización de datos.</li>
+              <li><strong>Desventajas:</strong> Limitado a la red local.</li>
+            </ul>
+            <p><em>Ejemplo:</em> Servidores NAS en empresas.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Microservicios -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingFour">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour">
+            <i class="bi bi-diagram-2 me-2"></i> Microservicios
+          </button>
+        </h2>
+        <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <img src="Img/microservicios.webp" class="img-fluid rounded mb-3" alt="Microservicios">
+            <p>Sistemas divididos en pequeños servicios independientes.</p>
+            <ul>
+              <li><strong>Ventajas:</strong> Escalables, flexibles.</li>
+              <li><strong>Desventajas:</strong> Complejidad en la comunicación.</li>
+            </ul>
+            <p><em>Ejemplo:</em> Netflix, Amazon.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Cloud Computing -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingFive">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive">
+            <i class="bi bi-cloud me-2"></i> Cloud Computing
+          </button>
+        </h2>
+        <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <img src="Img/cloud.jpg" class="img-fluid rounded mb-3" alt="Cloud Computing">
+            <p>Infraestructura, plataformas y software como servicio.</p>
+            <ul>
+              <li><strong>Ventajas:</strong> Escalable, flexible, global.</li>
+              <li><strong>Desventajas:</strong> Dependencia de terceros.</li>
+            </ul>
+            <p><em>Ejemplo:</em> AWS, Azure, GCP.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Edge Computing -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingSix">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix">
+            <i class="bi bi-cpu me-2"></i> Edge Computing
+          </button>
+        </h2>
+        <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <img src="Img/edge.webp" class="img-fluid rounded mb-3" alt="Edge Computing">
+            <p>Procesamiento de datos cerca de donde se generan.</p>
+            <ul>
+              <li><strong>Ventajas:</strong> Menor latencia, eficiencia.</li>
+              <li><strong>Desventajas:</strong> Requiere hardware distribuido.</li>
+            </ul>
+            <p><em>Ejemplo:</em> IoT, autos autónomos.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Bootstrap Bundle JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- jsPDF -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <!-- JS propio -->
+  <script src="scripts.js"></script>
+</body>
+</html>
